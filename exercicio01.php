@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1 style="position: relative; left:10px">Verificar se o número é par ou ímpar.</h1>
+    <h1 style="position: relative; left:10px">Verificar se o número é par ou ímpar</h1>
     <form method="POST" action="exercicio01.php" class="m-3">
             <input type="text" id="num1" class="form-control" name="num1" required>
             <br>
