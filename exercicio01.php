@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 01 - Verificar se o número é par ou ímpar.</title>
+    <title>Exercicio 01 - Verificar se o número é par ou ímpar</title>
 </head>
 
 <body>
@@ -12,8 +12,6 @@
     <form method="POST" action="exercicio01.php" class="m-3">
             <input type="text" id="num1" class="form-control" name="num1" required>
             <br>
-            <!--<input type="text" id="num2" class="form-control" name="num2" required>
-            <br>-->
             <button type="submit" class="">Verifique aqui</button>
     </form>
 </body>
