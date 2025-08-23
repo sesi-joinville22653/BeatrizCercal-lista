@@ -19,23 +19,4 @@
 
 <?php
 
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-    $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
-
-   function numPerfeito($num1){
-    $divisores = [];
-    for($i = 1; $i <= $num1; $i++){
-        if ($num1 % $i === 0) {
-            $divisores[] = $i;
-        }
-    }
-    return $divisores;
-   }
-
-   $divisores = numDivisores($num1);
-  
-}
-
 ?>
