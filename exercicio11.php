@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 10 - Palavra Palíndromo</title>
+    <title>Exercicio 11 - Palavra Palíndromo</title>
 </head>
 
 <body>
