@@ -18,5 +18,20 @@
 </html>
 
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $num = intval($_POST["num1"]);
+    $soma = 0;
 
+    for ($i = 1; $i < $num; $i++) {
+        if ($num % $i == 0) {
+            $soma += $i;
+        }
+    }
+
+    if ($soma == $num) {
+        echo "$num é um número perfeito!";
+    } else {
+        echo "$num não é um número perfeito.";
+    }
+}
 ?>
