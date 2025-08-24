@@ -9,7 +9,7 @@
 
 <body>
     <h1 style="position: relative; left:10px">Verificar se um ano é bissexto:</h1>
-    <form method="POST" action="exercicio11.php" class="m-3">
+    <form method="POST" action="exercicio14.php" class="m-3">
             <input type="text" id="num1" class="form-control" name="num1" required>
 
             <br>

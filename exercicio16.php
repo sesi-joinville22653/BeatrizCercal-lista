@@ -10,8 +10,8 @@
 <body>
     <h1 style="position: relative; left:10px">Verificar se, através de sua idade, é possível votar:</h1>
     <form method="POST" action="exercicio16.php" class="m-3">
-            <input type="text" id="pal1" class="form-control" name="pal1" required>
-            <input type="text" id="num1" class="form-control" name="num1" required>
+            <input type="text" id="pal1" class="form-control" name="pal1" placeholder="Nome" required>
+            <input type="text" id="num1" class="form-control" name="num1" placeholder="Idade" required>
 
 
             <br>

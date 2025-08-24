@@ -9,7 +9,7 @@
 
 <body>
     <h1 style="position: relative; left:10px">Insira uma senha forte para avaliação (Letras e Números)</h1>
-    <form method="POST" action="exercicio17.php" class="m-3">
+    <form method="POST" action="exercicio19.php" class="m-3">
             <input type="text" id="password" class="form-control" name="senha" required>
 
 

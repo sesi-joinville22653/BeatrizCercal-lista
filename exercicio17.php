@@ -10,9 +10,9 @@
 <body>
     <h1 style="position: relative; left:10px">Verificar datas válidas</h1>
     <form method="POST" action="exercicio17.php" class="m-3">
-            <input type="text" id="num1" class="form-control" name="num1" required>
-            <input type="text" id="num2" class="form-control" name="num2" required>
-            <input type="text" id="num3" class="form-control" name="num3" required>
+            <input type="text" id="num1" class="form-control" name="num1"  placeholder="Dia"required>
+            <input type="text" id="num2" class="form-control" name="num2 " placeholder="Mês" required>
+            <input type="text" id="num3" class="form-control" name="num3" placeholder="Ano" required>
 
 
 

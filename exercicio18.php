@@ -9,7 +9,7 @@
 
 <body>
     <h1 style="position: relative; left:10px">Verificar valores maiores entre 3 números</h1>
-    <form method="POST" action="exercicio17.php" class="m-3">
+    <form method="POST" action="exercicio18.php" class="m-3">
             <input type="text" id="num1" class="form-control" name="num1" required>
             <input type="text" id="num2" class="form-control" name="num2" required>
             <input type="text" id="num3" class="form-control" name="num3" required>
