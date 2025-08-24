@@ -22,10 +22,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
 
-    $fatorial = gmp_fact($num1);
+    function fatorial($n) {
+        if ($n < 0) return "Inválido";
+        $resultado = 1;
+        for ($i = 2; $i <= $n; $i++) {
+            $resultado *= $i;
+        }
+        return $resultado;
+    }
 
-    echo "O fatorial de " . $num1 . " é " . gmp_strval($fatorial);
-    
-}  
+    $fatorial = fatorial($num1);
+
+    echo "<p>O fatorial de " . $num1 . " é " . $fatorial . "</p>";
+}
 
 ?>
