@@ -22,9 +22,9 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $str = isset($_POST['pal1']) ? $_POST['pal1'] : '';
+    $pal1 = isset($_POST['pal1']) ? $_POST['pal1'] : '';
 
-    function contarVogais($pa1) {
+    function contarVogais($pal1) {
         $vogais = preg_match_all('/[aeiouAEIOU]/', $pal1, $matches);
         return $vogais;
     }

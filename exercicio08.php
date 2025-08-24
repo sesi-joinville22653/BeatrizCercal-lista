@@ -35,7 +35,7 @@
    $pares = numpAR($num1);
    $quant = count($pares);
 
-   echo "Existem $quantidade números pares entre 1 e $num1."
+   echo "Existem $quant números pares entre 1 e $num1.";
 }
 
 ?>

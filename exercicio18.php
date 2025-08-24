@@ -31,16 +31,17 @@
     $num3 = isset($_POST['num3']) ? (int)$_POST['num3'] : 0;
 
 
-    function maiorValor($valor1, $valor2, $valor3){
-        if ($valor1 >= $valor2 && $valor1 >= $valor3) {
-            echo "O maior valor é $valor1";
+    function maiorValor($num1, $num2, $num3){
+        if ($num1 >= $num2 && $num1 >= $num3) {
+            echo "$num1 é o maior valor";
+        } elseif ($num2 >= $num1 && $num2 >= $num3) {
+            echo "$num2 é o maior valor";
+        } else{
+            echo "$num3 é o maior valor";
         }
-    } elseif ($valo2 >= $valor1 && $valor2 >= $valor3){
-     echo "O maior valor é $valor2";
-    } else{
-    echo "O maior valor é $valor3";
-
     }
 
+    echo maiorValor($num1, $num2, $num3);
 
+}
 ?>

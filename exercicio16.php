@@ -28,12 +28,14 @@
     $num2 = isset($_POST['num2']) ? (int)$_POST['num2'] : 0;
 
     function podeVotar($votar){
-        if (votar >= 16) {
+        if ($votar >= 16) {
             echo "É permitido votar";
         } else{
             echo "Não é permitido votar";
         }
     }
+
+    echo podeVotar($num2);
 
   }
 

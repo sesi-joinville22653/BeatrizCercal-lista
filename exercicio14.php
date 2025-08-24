@@ -23,13 +23,15 @@
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
-    function anoBissexto($ano){
-        if (($ano % 4 == 0 && $ano % 100 != 0) || ($ano % 400 == 0)) {
+    function anoBissexto($num1){
+        if (($num1 % 4 == 0 && $num1 % 100 != 0) || ($num1 % 400 == 0)) {
             echo "$num1 é um ano bissexto";
         } else{
             echo "$num1 não é um ano bissexto";
         }
     }
+    
+    echo anoBissexto($num1);
 
   }
 

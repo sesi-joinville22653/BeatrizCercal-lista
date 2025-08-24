@@ -22,13 +22,13 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $str = isset($_POST['temp']) ? $_POST['temp'] : '';
+    $temp = isset($_POST['temp']) ? $_POST['temp'] : '';
 
-    function celsiusFahrenheit($c) {
-        return ($c * 9/5) + 32;
+    function celsiusFahrenheit($temp) {
+        return ($temp * 9/5) + 32;
     }
 
-    echo " Conversor: $num1 °C => " . celsiusToFahrenheit($num1) . " °F.</p>";
+    echo "<p style='position: relative; left:10px'>A temperatura de <strong>$temp °C</strong> corresponde a <strong>" . celsiusFahrenheit($temp) . " °F</strong>.</p>";
 }
 
 ?>
