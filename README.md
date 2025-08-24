@@ -5,7 +5,7 @@
   <tr>
     <td align="center">
       <a href="#" title="Fotografia Pessoal">
-        <img src="/src/assests/img/Foto1.png" width="100px;" alt="Foto de Beatriz Cercal Cachoeira"/><br>
+        <img src="Foto1.2 (1).png" width="100px;" alt="Foto de Beatriz Cercal Cachoeira"/><br>
         <sub>
           <b>Beatriz Cercal Cachoeira</b>
         </sub>
