@@ -29,10 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     function verificarLogin($user, $password) {
         $usuarioValido = "valor";
         $senhaValida = "valor";
-        return $username === $usuarioValido && $password === $senhaValida;
+        return $user === $usuarioValido && $password === $senhaValida;
     }
 
-    echo "<p style='position: relative; left:20px'>" . (verificarLogin($username, $password) ? "Login efetuado com sucesso" : "Tente Novamente.") . ".</p>";
+    echo "<p style='position: relative; left:20px'>" . (verificarLogin($user, $password) ? "Login efetuado com sucesso" : "Tente Novamente.") . ".</p>";
 }
 
 ?>
