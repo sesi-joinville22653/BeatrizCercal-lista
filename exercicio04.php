@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
 
-    function fatorial($n) {
+    function fatorial($n) { //Função Fatorial
         if ($n < 0) return "Inválido";
         $resultado = 1;
         for ($i = 2; $i <= $n; $i++) {
