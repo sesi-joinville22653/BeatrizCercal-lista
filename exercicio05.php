@@ -25,9 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
     $num2 = isset($_POST['num2']) ? (int)$_POST['num2'] : 0;
 
-    function somaDivisao($n) {
+    function somaDivisao($n) { //Definição de Função
         $soma = 0;
-        for ($i = 1; $i < $n; $i++) {
+        for ($i = 1; $i < $n; $i++) { //Lógica
             if ($n % $i == 0) {
                 $soma += $i;
             }

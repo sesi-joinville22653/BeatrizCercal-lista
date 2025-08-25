@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    if ($soma == $num) {
+    if ($soma == $num) { //Condicional SE
         echo "$num é um número perfeito!";
     } else {
         echo "$num não é um número perfeito.";

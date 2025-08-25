@@ -32,10 +32,10 @@
         return $pares;
     }
 
-   $pares = numpAR($num1);
+   $pares = numPar($num1);
    $quant = count($pares);
 
-   echo "Existem $quant números pares entre 1 e $num1.";
+   echo "Existem $quant números pares entre 1 e $num1."; //Visível ao usuário
 }
 
 ?>

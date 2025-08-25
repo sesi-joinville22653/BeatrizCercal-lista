@@ -35,7 +35,7 @@
    }
 
    $divisores = numDivisores($num1);
-   echo "Os divisores de" .$num1. " são " .implode(",", $divisores);
+   echo "Os divisores de" .$num1. " são " .implode(",", $divisores); //Implode: Junta os elementos por uma string
 }
 
 ?>
