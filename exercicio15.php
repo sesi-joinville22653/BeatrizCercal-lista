@@ -27,23 +27,23 @@
     $kg = isset($_POST['kg']) ? (int)$_POST['kg'] : 0;
     $alt = isset($_POST['kg']) ? (float)$_POST['alt'] : 0;
 
-    $imc = $kg / ($alt * $alt);
+    $imc = $kg / ($alt * $alt); //Definição de cálculo para IMC
 
     if($imc < 18.5) {
-        $cat = "Abaixo do peso";
+        $cat = "Abaixo do peso"; //Categoria
     } elseif ($imc < 24.9) {
-        $cat = "Peso normal";
+        $cat = "Peso normal"; //Categoria
     } elseif ($imc < 29.9) {
-        $cat = "Sobrepeso";
+        $cat = "Sobrepeso"; //Categoria
     } elseif ($imc < 34.9) {
-        $cat = "Obesidade grau 1";
+        $cat = "Obesidade grau 1"; //Categoria
     } elseif ($imc < 39.9) {
-        $cat = "Obesidade grau 2";
+        $cat = "Obesidade grau 2"; //Categoria
     } else {
-        $cat = "Obesidade grau 3";
+        $cat = "Obesidade grau 3"; //Categoria
     }
 
-    echo "<p style='position: relative; left:10px'>Seu IMC é " . number_format($imc, 2) . " e sua categoria é: $cat.</p>";
+    echo "<p style='position: relative; left:10px'>Seu IMC é " . number_format($imc, 2) . " e sua categoria é: $cat.</p>"; //number_format: Restrição para duas casas decimais
 }
 
 

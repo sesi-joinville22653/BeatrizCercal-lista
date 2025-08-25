@@ -35,11 +35,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $sequencia[] = $b;
             $temp = $b + $c;
             $b = $c;
-            $c = $temp;
+            $c = $temp; //Função de Fibonacci
         }
         return $sequencia;
     }
-    $sequencia = fibonacci($num1);
+    $sequencia = fibonacci($num1); //Sequência = Função Fibonacci, puxado pela variável $num1
     echo "<p>Sequência de Fibonacci até $num1:<br><strong>" . implode(', ', $sequencia) . "</strong></p>";
 }
 

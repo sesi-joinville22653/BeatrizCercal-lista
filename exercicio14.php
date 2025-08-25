@@ -24,7 +24,7 @@
 
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
     function anoBissexto($num1){
-        if (($num1 % 4 == 0 && $num1 % 100 != 0) || ($num1 % 400 == 0)) {
+        if (($num1 % 4 == 0 && $num1 % 100 != 0) || ($num1 % 400 == 0)) { //Condicional IF + Lógica
             echo "$num1 é um ano bissexto";
         } else{
             echo "$num1 não é um ano bissexto";

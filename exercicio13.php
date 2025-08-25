@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $temp = isset($_POST['temp']) ? $_POST['temp'] : '';
 
     function celsiusFahrenheit($temp) {
-        return ($temp * 9/5) + 32;
+        return ($temp * 9/5) + 32; //Conversão de temperaturas
     }
 
     echo "<p style='position: relative; left:10px'>A temperatura de <strong>$temp °C</strong> corresponde a <strong>" . celsiusFahrenheit($temp) . " °F</strong>.</p>";

@@ -24,7 +24,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $n1 = $_POST["pal1"];
     $palavra = strtolower(str_replace(' ', '', $n1));
-    $r = (strrev($palavra) == $palavra) ? "Palíndromo" : "Não Palíndromo";
+    $r = (strrev($palavra) == $palavra) ? "Palíndromo" : "Não Palíndromo"; //Lógica para definir se é ou não Palíndromo
 }
 
 echo "A palavra $n1 é: <strong>$r</strong>.";

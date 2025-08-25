@@ -28,9 +28,9 @@
     $num2 = isset($_POST['num2']) ? (int)$_POST['num2'] : 0;
 
 
-   function somaNum($num1, $num2){
-    $inicio = min($num1, $num2);
-        $fim = max($num1, $num2);
+   function somaNum($num1, $num2){ //Definição da função
+    $inicio = min($num1, $num2); //Mínino
+        $fim = max($num1, $num2); //Máximo
         $soma = 0;
          for ($i = $inicio; $i <= $fim; $i++) {
             $soma += $i;
