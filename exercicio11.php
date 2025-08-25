@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $r = (strrev($palavra) == $palavra) ? "Palíndromo" : "Não Palíndromo";
 }
 
-echo "A palavra '$n1' é: <strong>$r</strong>.";
+echo "A palavra $n1 é: <strong>$r</strong>.";
 
 
 ?>

@@ -10,7 +10,7 @@
 <body>
     <h1 style="position: relative; left:10px">Comparar Usuário e Senha com valores fixos</h1>
     <form method="POST" action="exercicio20.php" class="m-3">
-            <input type="text" id="user" class="form-control" name="user" placeholder="Nome" required>
+            <input type="text" id="username" class="form-control" name="user" placeholder="Nome" required>
             <input type="text" id="password" class="form-control" name="senha" placeholder="Senha" required>
 
 
@@ -23,16 +23,16 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $username = isset($_POST['user']) ? (String)$_POST['user'] : 0;
+    $username = isset($_POST['username']) ? (String)$_POST['username'] : 0;
     $password = isset($_POST['password']) ? (String)$_POST['password'] : 0;
 
-    function verificarLogin($user, $password) {
+    function verificarLogin($username, $password) {
         $usuarioValido = "valor";
         $senhaValida = "valor";
-        return $user === $usuarioValido && $password === $senhaValida;
+        return $username === $usuarioValido && $password === $senhaValida;
     }
 
-    echo "<p style='position: relative; left:20px'>" . (verificarLogin($user, $password) ? "Login efetuado com sucesso" : "Tente Novamente.") . ".</p>";
+    echo "<p style='position: relative; left:20px'>" . (verificarLogin($username, $password) ? "Login efetuado com sucesso" : "Tente Novamente.") . ".</p>";
 }
 
 ?>
