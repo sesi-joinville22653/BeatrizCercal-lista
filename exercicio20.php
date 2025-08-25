@@ -10,8 +10,8 @@
 <body>
     <h1 style="position: relative; left:10px">Comparar Usuário e Senha com valores fixos</h1>
     <form method="POST" action="exercicio20.php" class="m-3">
-            <input type="text" id="username" class="form-control" name="user" placeholder="Nome" required>
-            <input type="text" id="password" class="form-control" name="senha" placeholder="Senha" required>
+            <input type="text" id="username" class="form-control" name="username" placeholder="Nome" required>
+            <input type="text" id="password" class="form-control" name="password" placeholder="Senha" required>
 
 
             <br>
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         return $username === $usuarioValido && $password === $senhaValida;
     }
 
-    echo "<p style='position: relative; left:20px'>" . (verificarLogin($username, $password) ? "Login efetuado com sucesso" : "Tente Novamente.") . ".</p>";
+    echo (verificarLogin($username, $password) ? "Login efetuado com sucesso" : "Tente Novamente.");
 }
 
 ?>
