@@ -25,9 +25,9 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $dia = $_POST['dia'];
-    $mes = $_POST['mes'];
-    $ano = $_POST['ano'];
+    $dia = $_POST['dia']; //Definição de DIA
+    $mes = $_POST['mes']; //Definição de MÊS
+    $ano = $_POST['ano']; //Definição de ANO
 
     if (checkdate($mes, $dia, $ano)) {
         echo "Data Válida.";

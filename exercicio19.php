@@ -22,7 +22,7 @@
 <?php
  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $senha = $_POST['senha'];
-        $forte = strlen($senha) >= 8 && preg_match('/[A-Za-z]/', $senha) && preg_match('/\d/', $senha);
+        $forte = strlen($senha) >= 8 && preg_match('/[A-Za-z]/', $senha) && preg_match('/\d/', $senha); //Denominação de caracteres aceitos
         if ($forte) {
             echo "Senha forte.";
         } else {

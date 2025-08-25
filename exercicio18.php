@@ -31,8 +31,8 @@
     $num3 = isset($_POST['num3']) ? (int)$_POST['num3'] : 0;
 
 
-    function maiorValor($num1, $num2, $num3){
-        if ($num1 >= $num2 && $num1 >= $num3) {
+    function maiorValor($num1, $num2, $num3){ //Função de maior valor
+        if ($num1 >= $num2 && $num1 >= $num3) { //Condicional SE
             echo "$num1 é o maior valor";
         } elseif ($num2 >= $num1 && $num2 >= $num3) {
             echo "$num2 é o maior valor";

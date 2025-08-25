@@ -27,7 +27,7 @@
     $pal1 = isset($_POST['pal1']) ? (int)$_POST['pal1'] : 0;
     $num2 = isset($_POST['num2']) ? (int)$_POST['num2'] : 0;
 
-    function podeVotar($votar){
+    function podeVotar($votar){  //Definição da Função
         if ($votar >= 16) {
             echo "É permitido votar";
         } else{
@@ -35,7 +35,7 @@
         }
     }
 
-    echo podeVotar($num2);
+    echo podeVotar($num2); //Mostra a idade ao usuário
 
   }
 

@@ -27,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = isset($_POST['password']) ? (String)$_POST['password'] : 0;
 
     function verificarLogin($username, $password) {
-        $usuarioValido = "valor";
-        $senhaValida = "valor";
+        $usuarioValido = "valor"; //Definição do usuário padrão;
+        $senhaValida = "valor"; //Definição da senha padrão;
         return $username === $usuarioValido && $password === $senhaValida;
     }
 
