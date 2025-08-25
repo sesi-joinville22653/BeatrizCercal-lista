@@ -37,7 +37,7 @@
         }
         return $soma;
     }
-    $soma = somade($num1, $num2);
+    $soma = somaNum($num1, $num2);
 
     echo "A soma é <strong>$soma</strong>.";
 }
