@@ -10,9 +10,9 @@
 <body>
     <h1 style="position: relative; left:10px">Verificar datas válidas</h1>
     <form method="POST" action="exercicio17.php" class="m-3">
-        <input type="text" id="num1" class="form-control" name="num1" placeholder="Dia" required>
-        <input type="text" id="num2" class="form-control" name="num2 " placeholder="Mês" required>
-        <input type="text" id="num3" class="form-control" name="num3" placeholder="Ano" required>
+        <input type="text" id="dia" class="form-control" name="dia" placeholder="Dia" required>
+        <input type="text" id="mes" class="form-control" name="mes" placeholder="Mês" required>
+        <input type="text" id="ano" class="form-control" name="ano" placeholder="Ano" required>
 
         <br>
         <button type="submit" class="">Verifique Aqui</button>
@@ -25,18 +25,15 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
-    $num2 = isset($_POST['num2']) ? (int)$_POST['num2'] : 0;
-    $num3 = isset($_POST['num3']) ? (int)$_POST['num3'] : 0;
+    $dia = $_POST['dia'];
+    $mes = $_POST['mes'];
+    $ano = $_POST['ano'];
 
-
-    function validarData($num1, $num2, $num3)
-    {
-        return checkdate($num1, $num2, $num3);
+    if (checkdate($mes, $dia, $ano)) {
+        echo "Data Válida.";
+    } else {
+        echo "Data Inválida.";
     }
-
-    echo validarData($num1, $num2, $num3) ? "Data Válida" : "Data Inválida";
 }
-
 
 ?>
