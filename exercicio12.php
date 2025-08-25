@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         return $vogais;
     }
 
-    echo "<p style='position: relative; left:10px'>A str <strong>'$pal1'</strong> contém " . contarVogais($pal1) . " vogais.</p>";
+    echo "<p style='position: relative; left:10px'>A palavra <strong>'$pal1'</strong> contém " . contarVogais($pal1) . " vogais.</p>";
 
 }
 
