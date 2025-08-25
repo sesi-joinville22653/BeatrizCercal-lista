@@ -19,7 +19,7 @@
 
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { //Aceitação somente POST
 
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
 
