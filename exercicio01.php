@@ -23,9 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $num1 = isset($_POST['num1']) ? (int)$_POST['num1'] : 0;
 
-    if ($num1 % 2 == 0) {
+    if ($num1 % 2 == 0) { //Condicional 
         echo "<p style='position: relative; left:10px'>O número $num1 é par.</p>";
-    } else {
+    } else { //Terminação de Condicional
         echo "<p style='position: relative; left:10px'>O número $num1 é ímpar.</p>";
     }
 }
